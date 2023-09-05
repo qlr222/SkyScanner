@@ -1,0 +1,1253 @@
+/*====================================
+    Common
+====================================*/
+
+.mb-2r {
+	margin-bottom: 2rem;
+}
+
+.mb-4r {
+	margin-bottom: 4rem;
+}
+
+.mb-1r {
+    margin-bottom: 1rem;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+#cl-dashboard{
+   display:none;
+}
+
+/*====================================
+    Header
+====================================*/
+
+.logo a, .logo a:hover, .logo a:focus {
+    color: #444;
+    transition-duration: 0.5s;
+}
+.logo a span {
+    color: #51abf3;
+}
+.main-menu .nav li.active a, .main-menu .nav li a:hover, .main-menu .nav li a:focus{
+    color: #51abf3;
+}
+.main-menu .nav li.active a:before, .main-menu .nav a:hover:before {
+    background: #51abf3;
+}
+.book-btn {
+    border: 1px solid #51abf3;
+    background: #51abf3;
+}
+.book-btn:hover{
+   border: 1px solid #2b96ed;
+   background-color:#2b96ed;
+}
+#sticky-wrapper {
+    background: #fff;
+    /*border-bottom: 1px solid #d9d9d9;*/
+}
+.is-sticky .header-area:after{
+    background: none;
+}
+#sticky-wrapper .col-sm-10{
+    width: auto;
+    float: right;
+}
+.main-menu .nav li a{
+   color:#444;
+}
+.header-dummy{
+   display:block;
+   height:80px;
+   font-size: 0;
+   background-color: #e9e9e9;
+}
+.search-header-dummy{
+   height:208px;
+}
+
+.top-area {
+	position: relative;
+}
+
+.top-area ,
+.header-area,
+.is-sticky .header-area{
+    /* position: relative !important; */
+    height: 80px;
+    border-bottom: 2px solid #ddd;
+    background: #fff;
+    z-index:50;
+}
+.home-border{
+   display:none;
+}
+#air.container {
+    max-width: 1000px;
+    padding:0 10px;
+}
+
+
+/*====================================
+    Top-search-bar
+====================================*/
+
+.top-search-bar{
+   width:100%;
+   height: 130px;
+   position: fixed;
+    top: 78px;
+    z-index: 10;
+   padding: 25px 0;
+   border: 0;
+   background-color: #51abf3;
+}
+.top-search-bar .container {
+    max-width: 1000px;
+}
+.top-search-bar p{
+   color:#fff;
+}
+.search-wrap.clearfix {
+    margin: 3px 0;
+    position: relative;
+}
+.direct-option{
+   margin-bottom: 5px;
+   color:#fff;
+   cursor: pointer;
+}
+.search-option input{
+   width:49%;
+   padding: 10px;
+   border:0;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 14px;
+   box-sizing: border-box;
+}
+.search-option input#arr-date{
+   border-left: 1px solid #ddd;
+}
+.search-option select{
+   width:49%;
+   margin: 3px 0;
+   border:0;
+    float: left;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 14px;
+   box-sizing: border-box;
+   box-shadow: none;
+}
+.search-option{
+   width: 30%;
+    padding: 0 1%;
+    margin-left: 0.5%;
+    border-radius: 2px;
+    float: left;
+    background-color: #fff;
+    box-shadow: none;
+    overflow: hidden;
+}
+.search-option.other-option {
+    width: 20%;
+}
+.search-option.other-option select {
+    width: 100%;
+}
+.search-option select:active,
+.search-option select:focus{
+   box-shadow: none;
+}
+.top-search-bar .btn{
+    width: 18%;
+    float: right;
+    height: 41px;
+    border-radius: 2px;
+    font-weight: 600;
+    color: #444;
+    background-color: #eaf3fa;
+}
+.top-search-bar .btn:hover {
+    color: #fff;
+    background-color: #0087f1;
+    transition-duration: 0.5s;
+}
+
+/*====================================
+   서브페이지
+====================================*/
+
+
+/* flaot 뒷처리 */
+.clearfix::before{
+   content:"";
+   display:block;
+}
+.clearfix::after{
+   content:"";
+   display:block;
+}
+.container{
+   position:relative;
+}
+
+
+/*====================================
+   airList.jsp
+   항공권 검색 페이지
+====================================*/
+
+/*----------------------
+   목록 정렬 옵션 
+-----------------------*/
+#air-sort {
+   min-width:340px;
+    text-align: right;
+    margin-bottom: -43px;
+   z-index: 1;   
+}
+.btn-secondary:active {
+   box-shadow: none;
+}
+.input-chk:checked + label{
+   color: #51abf3;
+    font-weight: 700;
+    box-shadow: none;
+}
+.btn-group-toggle input{
+   display:none;
+}
+.btn-secondary {
+    padding: 0;
+    margin-left: 10px;
+}
+
+
+/*----------------------
+   항공권 목록
+-----------------------*/
+
+.list-section.container {
+    margin-top: 20px;
+    min-width:340px;
+}
+p.announc {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+p.announc-sub{
+    color: #828282;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.list-section .product{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.15);
+    border: 1px solid #ddd;
+}
+.list-section a {
+    width: 100%;
+    height: 100%;
+   /*  padding: 20px 10px; */
+}
+.list-section .flight-box {
+   width: 60%;
+    height: 55px;
+    margin-top: -25px;
+    margin-left: 3%;
+    position: absolute;
+    top: 50%;
+}
+.list-section .flight-box span {
+    display: block;
+}
+.list-section .flight-info p{
+    width:60px;
+    margin:0 5px;
+    float: left;
+}
+.list-section .flight-info p.airline{ /*아시아나항공*/
+      width: 175px;
+    padding-left: 85px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+    color: #444;
+    background: url(../images/airlines/air1.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    /* background-size: 32px; */
+}
+.list-section .flight-info p.airline2{ /*대한항공*/
+    background: url(../images/airlines/air2.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .flight-info p.airline3{ /*진에어*/
+    background: url(../images/airlines/air3.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .flight-info p.airline4{ /*제주항공*/
+    background: url(../images/airlines/air4.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .flight-info p.airline5{ /*이스타항공*/
+    background: url(../images/airlines/air5.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .flight-info p.airline6{ /*에어부산*/
+    background: url(../images/airlines/air6.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .flight-info p.airline7{ /*티웨이항공*/
+    background: url(../images/airlines/air7.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.list-section .airline span {/* 항공기 편명? 기종? */
+    color: #999;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+}
+.list-section .flight-info .dep-info,
+.list-section .flight-info .arr-info {
+    font-size: 18px;
+    color: #333;
+}
+.list-section .flight-info .dep-info{
+    text-align: right;
+}
+.list-section .flight-info .arr-info{
+    text-align: left;
+}
+.list-section .flight-info span.airport,
+.list-section .flight-info .flight-time{
+    display: block;
+    font-size: 12px;
+    color: #495056;
+}
+.list-section .flight-info .flight-time{
+    width: 155px;
+    padding-top: 31px;
+    margin: 0 10px;
+    text-align: center;
+    background: url(https://flyasiana.com/C/pc/image/common/bg_fligth_direct.png);
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    background-size: 155px;
+}
+
+.list-section .price-box {
+    width: 35%;
+    padding: 0px 0;
+    float: right;
+    color: #666;
+    text-align: right;
+    font-weight: 200;
+    border-left: 1px solid #ddd;
+}
+.list-section a.product-picker:hover {
+   background-color: #dcdcdc
+}
+.list-section a.product-picker:hover span.price{
+   color:#078af2;
+}
+.list-section a.product-picker:hover span.sit{
+   color: #666;
+}
+.list-section .price-box .box{
+    text-align: left;
+}
+.list-section .price-box div:nth-child(2) a{
+   border-top:1px solid #ddd;
+}
+.list-section .price-box .box a {
+   padding: 30px 20px;
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+.list-section .price-box:first-child div.box{
+   border-bottom:1px solid #ddd;
+}
+.price-box span.price {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #51abf3;
+}
+span.sit {
+    float: right;
+    color: #999;
+    font-weight: 400;
+}
+
+
+/*----------------------
+   선택된 항공권
+-----------------------*/
+
+.selected-list{
+}
+.list-section .selected-product {
+    width: 100%;
+    margin-left: -1px;
+    margin-bottom:10px;
+    float: left;
+    padding: 50px 0px 0px;
+    border-radius: 0;
+    border-color: #adadad;
+    box-shadow:none;
+}
+.selected-product .selected {
+   width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    background-color: #808080;
+    background-size: 160px;
+    background-position: 10px center;
+}
+.selected-product a.cancel-btn {
+   width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    z-index: 1;
+    font-size: 0;
+    cursor: pointer;
+}
+a.cancel-btn:before, 
+a.cancel-btn:after {
+   content: '';
+    width: 110%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+}
+.selected-product a.cancel-btn:before {
+   -webkit-transform: translate(-50%,-50%) rotate(45deg);
+   transform: translate(-50%,-50%) rotate(45deg);
+}
+.selected-product a.cancel-btn:after {
+   -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+   transform: translate(-50%,-50%) rotate(-45deg);
+}
+.selected-product a.cancel-btn:hover a.cancel-btn:before{
+}
+.selected-product .flight-box{
+    margin-top: -1px;
+}
+.list-section .price-box .box .product-picker{
+   padding: 30px 20px;
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+button.btn.reservation-btn {
+    width: 100%;
+    padding: 14px 0;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #404040;
+    background-color: #d1d4d7;
+}
+button.btn.reservation-btn:hover {
+    color: #ffffff;
+    background-color: #51abf3;
+    transition-duration: 0.5s;
+}
+button.btn.reservation-btn:after {
+/*    content:'';
+   height:1px;
+   width:102%;
+   position:absolute;
+   bottom:0;
+   left:-1%;
+   border-bottom: 1px dashed #8b9399; */
+}
+
+
+/*====================================
+   airCart.jsp
+   항공권 장바구니 페이지
+====================================*/
+.s-title {
+    text-align: center;
+    margin: 20px 0 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.cart-bottom{
+   padding: 20px 0;
+   border-top: 1px dashed #b0bac1;
+}
+p.cart-total {
+    width: 70%;
+    padding: 10px;
+    float: left;
+    font-size: 14px;
+}
+.cart-total span{
+   margin-left: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2a3493;
+}
+.cart-total span.customize{
+   font-size: 14px;
+}
+.cart-bottom .btn{
+    width: 25%;
+    padding: 11px 0;
+    float: right;
+    color: #fff;
+    background-color: #196ae4;
+}
+.cart-bottom .btn:hover {
+    background-color: #0d57c7;
+    transition-duration: 0.5s;
+}
+
+
+/*====================================
+   hotelView.jsp
+   숙소 검색 페이지
+====================================*/
+.hotel-search .search-option {
+    width: 65%;
+}
+.hotel-search .btn {
+    width: 34%;
+}
+
+/*----------------------
+   숙소 검색 목록
+-----------------------*/
+.hotel-list-section{
+   width: 90%;
+    position: relative;
+    margin: 15px auto 0;
+}
+.search-header-dummy-hotel{
+    height: 175px;
+}
+
+section.hotel-search.top-search-bar {
+    height: 95px;
+}
+.hotel-list, .map-wrap {
+    width: 50%;
+    float: left;
+}
+.hotel-list {
+    width: 48%;
+    margin-right: 2%;
+}
+.hotel-list-section .map-wrap{
+   text-align: center;
+    height: 700px;
+    background:url(https://ccc.kra.co.kr/down/IRCC/centerMapImg/50029794.png) no-repeat center center;
+    background-size: cover;
+}
+#map{
+   position: fixed !important;
+    right: 0px;
+    z-index: -1;
+}
+.hotel-list .product{
+   /* padding: 0 10px 15px; */
+    padding: 21px 10px;
+    margin-bottom: 15px;
+    border: 0;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+}
+.hotel-list .product:hover{
+   border:0;
+   border-bottom: 1px solid #d9d9d9;
+   transition-duration: 0.5s;
+}
+.hotel-list .product:hover h1.hotel-name{
+   color:#2b96ed;
+   text-decoration: underline;
+   transition-duration: 0.5s;
+}
+.hotel-list .img{
+   width: 28%;
+    max-width: 160px;
+    margin-right: 2%;
+    height: 110px;
+    float: left;
+    /* background: url(https://yaimg.yanolja.com/resize/place/v4/2017/08/20/21/640/59998365d95910.63654612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+.hotel-list .info-wrap{
+   width: 70%;
+    float: left;
+}
+.hotel-list a.hotel-name {
+    display: inline-block;
+    width: 100%;
+    margin-right: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #4c565d;
+}
+.hotel-list p.hits{
+   display: inline;
+   padding: 1px 5px;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #ffc314;
+    color: #fff;
+    border-radius: 2px;
+}
+.hits span{
+   
+}
+.hotel-list .address{
+   margin-top: 10px;
+    color: #555;
+    font-weight: 300;
+}
+.address .icon{
+   display: inline-block;
+   width:16px;
+   height:16px;
+   background:url(../images/hotel/pin-icon.png) no-repeat;
+   background-size: 16px;
+}
+.hotel-list a.call {
+    padding: 0;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0px;
+    color: #666;
+}
+.hotel-list a.call span{
+   font-size: 15px;
+}
+.hotel-list a.call:hover span{
+   color:#176cb0;   
+}
+
+
+
+/*====================================
+    Member
+   로그인, 회원가입, 아이디/비밀번호 찾기
+====================================*/
+
+.member-page {
+   margin: 8rem 0;
+}
+
+.member-page .wrapper {
+   border: 1px solid #ccc;
+    padding: 3rem;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.member-page .menu-text {
+   font-weight: 400;
+   color: #7d7d7d;
+   line-height: 1.6;
+}
+
+.member-page .form-control,
+.member-page .btn,
+.member-page .other-menu .btn-custom-outline {
+   height: 40px;
+   margin-bottom: 1.4rem;
+}
+
+.member-page .other-menu {
+   border-top: 1px solid #d6d6d6;
+   padding-top: 3rem;
+   margin-top: 3rem;
+}
+
+.member-page .other-menu .btn-custom-outline {
+   display: block;
+   width: 100%;
+   border-radius: 4px;
+   border: 1px solid #ccc;
+   padding: 10px 12px;
+   font-size: 14px;
+   text-decoration: none;
+   color: #6b6b6b;
+   -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.member-page .other-menu .btn-custom-outline:hover {
+   background: #f3f3f3;
+   text-decoration: none;
+}
+
+.member-page .other-menu a:last-child {
+   margin-bottom: 0;
+}
+
+.member-page .social-menu .foot-icons {
+   margin-top: 3rem;
+}
+
+.social-menu .foot-icon-bg-2 {
+    background: #f53d3d;
+}
+
+.social-menu .foot-icon-bg-3 {
+    background: #1dc800;
+}
+
+
+/*====================================
+    Mypage
+   계정관리, 예약내역
+====================================*/
+
+.my-page {
+   margin: 5rem 0;
+}
+
+.my-page .wrapper {
+   margin: 0 auto;
+   float: none;
+}
+
+.my-page .user-info {
+   padding: 5rem;
+   overflow: hidden;
+   position: relative;
+   background: rgba(0,0,0,0.2)
+}
+
+.my-page .info-box p,
+.my-page .info-box a {
+   color: #fff;
+}
+
+.my-page .info-box .info-name {
+   font-size: 26px;
+    padding: 2rem 0 0;
+}
+
+.my-page .info-box .info-email {
+   font-size: 15px;
+   font-weight: 300;
+    padding: 1rem 0;
+}
+
+.my-page .user-bg {
+   background: url(../images/user/page-bg.jpg) no-repeat center top;
+   background-size: cover;
+   width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+/* .my-page .menu-box {
+   border-top: 1px solid #ccc;
+   padding: 3rem 0;
+} */
+
+.my-page .profile {
+   border-radius: 50%;
+   overflow: hidden;
+   width: 100px;
+   margin: 0 auto;
+}
+
+/* .my-page .intro-msg {
+   font-size: 16px;
+    padding: 2rem 0 0.6rem;
+    font-weight: 500;
+}
+
+.my-page .user-email {
+   font-size: 12px;
+   color: #00b9da;
+}
+
+.my-page .user-menu li {
+   padding: 1.6rem 1.2rem;
+   border-bottom: 1px solid #ccc;
+}
+
+.my-page .user-menu li:first-child {
+   border-top: 1px solid #ccc;
+}
+
+.my-page .user-menu a {
+   font-size: 16px;
+   color: #616161;
+   transition: all 0.25s ease-in-out 0s;
+}
+
+.my-page .user-menu a:hover,
+.my-page .user-menu a:active,
+.my-page .user-menu a:focus {
+   color: #8a8a8a;
+}
+
+.my-page .user-menu a i {
+   margin-right: 1rem;
+} */
+
+.my-page .user-box .box-header .link {
+   border-bottom: 1px solid #ccc;
+    color: #9a9a9a;
+   font-size: 12px;
+   font-weight: 300;
+}
+
+.my-page .user-box .box-header .header-title {
+   display: inline-block;
+   vertical-align: top;
+}
+
+.my-page .user-box .table-bordered {
+   border-right: none;
+   border-left: none;
+}
+
+.my-page table th,
+.my-page table td {
+   vertical-align: middle !important;
+}
+
+.my-page table th {
+   text-align: center;
+}
+
+/* .my-page > .resv-table td:not(.resv-info),
+.my-page .user-table .qna-state {
+   text-align: center;
+}*/
+
+.my-page .resv-table {
+   width: 100%;
+   overflow: hidden;
+   border: 1px solid #ccc;
+   padding: 3rem;
+   margin-bottom: 1rem;
+}
+
+.my-page .resv-table li {
+   float: left;
+   /* vertical-align: middle; */
+   /* text-align: center; */   
+}
+
+.my-page .resv-table p {
+   line-height: 1.8
+} 
+
+.my-page .resv-table .resv-info {
+   overflow: hidden;
+}
+
+.my-page .resv-table .resv-info li {
+	padding-right: 5rem;
+}
+
+.my-page .resv-table .resv-info li:last-child {
+	padding-right: 0;
+}
+
+.my-page .resv-table .resv-info .info-title {
+   font-size: 12px;
+    color: #9e9e9e;
+    font-weight: 300;
+}
+
+.my-page .resv-table .resv-info .info-no {
+   font-size: 13px;
+   font-weight: 500;
+}
+
+.my-page .resv-table .resv-info .info-date {
+   font-size: 12px;
+    color: #8e8e8e;
+}
+
+.my-page .user-table .info-more-btn {
+   background: #00d8ff;
+   border-radius: 10px;
+   padding: 0.4rem 0.8rem;
+   color: #fff;
+   font-size: 11px;
+   margin: 0.4rem 0;
+}
+
+.my-page .resv-table .ticket-info li {
+	
+}
+
+.my-page .resv-table .ticket-info .trip-date {
+	border-left: 1px dashed #ccc;
+	padding: 0 2rem;
+	position: relative;
+}
+
+.my-page .resv-table .ticket-info .trip-date.on:before {
+	content: '●';
+	font-size: 1px;
+	color: #ccc;
+	position: absolute;
+    top: -2px;
+    left: -5px;
+}
+
+
+/* .my-page .resv-table .ticket-info .trip-date:first-child {
+   border-left: 1px dashed #ccc;
+} */
+
+.my-page .resv-table .ticket-info .trip-title {
+   color: #8e8e8e;
+}
+
+.my-page .resv-table .ticket-info .trip-airport {
+   font-weight: 500;
+}
+
+.my-page .text-success {
+   color: #28af77;
+}
+
+.my-page .text-standby {
+   color: #3b84f3;
+}
+
+.my-page .text-cancel {
+   color: #f34242;
+}
+
+.my-page .text-price {
+   font-weight: 500;
+}
+
+.my-page .basic-btn {
+   border: 0;
+    font-size: 12px;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.my-page .cancel-btn {
+   background: #e8e8e8;
+    color: #949494;
+}
+
+.my-page .pay-btn {
+   background: #3b84f3;
+   color: #fff;
+}
+
+.my-page .resv-btn {
+   background: #28af77;
+   color: #fff;
+}
+
+.my-page .table-bordered th {
+   border-bottom: 0;
+   padding: 10px;
+}
+
+.my-page .table-bordered td {
+	padding: 20px;
+}
+
+.my-page .user-table td:last-child {
+	text-align: center;
+}
+
+.my-page .user-table .qna-date {
+   font-size: 13px;
+    color: #a0a0a0;
+    padding: 0.6rem 0;
+}
+
+.my-page .user-table a {
+   font-size: 14px;
+    color: #666;
+}
+
+.my-page .detail-box i {
+   font-size: 20px;
+    color: #666;
+    padding: 0 0.4rem;
+}
+
+.my-page .detail-box {
+   width: 768px;
+    margin: 0 auto 4rem;
+}
+
+/* .my-page .resv-detail {
+   padding: 0;
+}
+
+.my-page .resv-detail table {
+   margin: 0 !important;
+}
+
+.my-page .resv-detail table,
+.my-page .resv-detail table p {
+   text-align: left;
+}
+
+.my-page .resv-detail table tr {
+   border-bottom: 1px solid #ccc;
+}
+
+.my-page .resv-detail table th {
+   text-align: center;
+   border-right: 1px solid #ccc !important;
+}
+
+.my-page .resv-detail table tr:last-child,
+.my-page .resv-detail table th,
+.my-page .resv-detail table td {
+   border: 0;
+}
+
+.my-page .resv-detail table td {
+   padding: 20px;
+} */
+
+.my-page .user-table-notice {
+	border: 1px solid #ccc;
+    padding: 2rem;
+    color: #8b8b8b;
+    text-align: center;
+}
+
+/*====================================
+    Board
+	회사소개, 뉴스, 고객센터, 서비스 이용약관, 개인정보처리방침
+====================================*/
+
+.board-page input,
+.board-page select {
+	height: 40px;
+}
+
+.board-page {
+	margin: 8rem 0;
+}
+
+.board-page .nav > li > a {
+    padding: 14px 24px;
+    font-size: 16px;
+}
+
+.board-page table {
+	font-size: 16px;
+	color: #6b6b6b;
+}
+
+.board-page table th {
+	font-weight: 500;
+	text-align: center;
+	border-bottom: 0 !important;
+}
+
+.board-page table th,
+.board-page table td {
+	padding: 16px !important;
+}
+
+/* .board-page table td:first-child,
+.board-page table td:last-child {
+	text-align: center;
+} */
+.board-page table td:not(:nth-child(2)) {
+	text-align: center;
+}
+
+.board-page a,
+.board-page table td a,
+.board-page table td a:hover,
+.board-page table td a:active,
+.board-page table td a:focus {
+	font-size: inherit;
+	color: inherit;
+}
+
+.board-page .notice {
+	font-weight: 500;
+	color: #00b8dc;
+}
+
+.board-page .book-btn {
+	background: #00d8ff;
+    border: 1px solid #00d8ff;
+    width: 120px;
+    height: 40px;
+	padding: 8px 12px;
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.board-page .book-btn:hover {
+	text-decoration: none;
+	font-size: inherit;
+	padding: 8px 12px;
+}
+
+.board-page .book-btn.dark {
+	background: #565656 !important;
+    border: 1px solid #565656 !important;
+}
+
+.board-page .book-btn.dark:hover {
+	background: #737373 !important;
+    border: 1px solid #737373 !important;
+}
+
+
+/*----------------------
+    content-view
+-----------------------*/
+
+.board-view .title {
+	font-size: 26px;
+}
+
+.board-view .info {
+	font-size: 15px;
+	font-weight: 300;
+	color: #d0d0d0;
+}
+
+.board-view .content {
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 4rem;
+}
+
+.board-view .content .template {
+	font-size: 16px;
+	line-height: 1.8;
+}
+
+.board-view .count::before {
+	content: '';
+	width: 1px;
+	height: 10px;
+	background: #ddd;
+	display: inline-block;
+	margin: 0 10px;
+}
+
+
+/*----------------------
+    content-write
+-----------------------*/
+
+.board-write .sub-title {
+	font-weight: 400;
+	color: #6b6b6b;
+	line-height: 1.8;
+}
+
+.board-write .write-form .col-md-3,
+.board-write .write-form .col-md-9 {
+	padding: 0;
+}
+
+.board-write .write-form .col-md-3 {
+	padding-right: 1rem;
+}
+
+.board-write .content {
+	border: 0;
+	padding-bottom: 0;
+}
+
+/*----------------------
+    content-admin
+-----------------------*/
+
+.board-page .content-admin {
+	padding-left: 4rem;
+	padding-bottom: 2rem;
+	position: relative;
+}
+
+.content-admin .border-icon:before {
+	content: '└';
+    color: #848484;
+    position: absolute;
+    left: 15px;
+}
+
+/*----------------------
+    content-news
+-----------------------*/
+
+.admin-menu .admin-btn {
+    color: #96d2dd;
+    border-bottom: 1px solid;
+    margin-right: 0.8rem;
+}

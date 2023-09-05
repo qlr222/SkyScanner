@@ -1,0 +1,162 @@
+/*=========================================================
+    Notice.
+    media query는 responsive.css 에 있습니다
+==========================================================*/
+
+/*====================================
+    Common
+====================================*/
+
+/*----------------------
+    margin / padding
+    부트스트랩 때문에 적용이 안되므로 !important를 줍시다.
+-----------------------*/
+
+.mb-1 {
+    margin-bottom: 1.2rem !important;
+}
+
+.mb-2 {
+    margin-bottom: 2.2rem !important;
+}
+
+/*----------------------
+    bootstrap custom
+-----------------------*/
+
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child>.btn,
+.input-group-btn:first-child>.btn-group>.btn,
+.input-group-btn:first-child>.dropdown-toggle,
+.input-group-btn:last-child>.btn-group:not(:last-child)>.btn,
+.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+.input-group .form-control:not(:first-child):not(:last-child),
+.input-group-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child) {
+    border-radius: 4px;
+}
+
+
+/*====================================
+    Header
+====================================*/
+
+/*----------------------
+    modal
+    로그인, 회원가입 모달로 사용하려 했으나 페이지 이동으로 제어 방식을 변경,
+    우선 주석처리 합니다.
+-----------------------*/
+
+/* .modal-body .form-control {
+    height: 40px;
+    border-radius: 4px;
+}
+
+.input-group,
+.modal-body .book-btn {
+    width: 100%;
+}
+
+.modal-body .modal-other-menu {
+    padding: 8px 0 0;
+}
+
+.modal-body .modal-other-menu a {
+    color: #a5a5a5;
+}
+
+.modal-body .modal-other-menu .short-v-line {
+    margin: 0 5px;
+}
+
+.modal-body .modal-other-menu .short-v-line::before {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background: #a5a5a5;
+    display: inline-block;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.modal-footer .modal-title-other {
+    color: #a5a5a5;
+    margin: 1rem 0 2rem;
+}
+
+.modal-footer .foot-icons {
+    margin-top: 0;
+}
+
+.modal-footer .foot-icon-bg-2 {
+    background: #f53d3d;
+}
+
+.modal-footer .foot-icon-bg-3 {
+    background: #1dc800;
+} */
+
+
+/*====================================
+    Main
+====================================*/
+
+.search-btn .about-btn {
+    margin-top: 0;
+}
+
+.service-content h2 {
+    color: #565a5c;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Noto Sans KR', 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.item-title .item-title-text {
+    color: #fff;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: 'Noto Sans KR', 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 3px;
+    -webkit-transition: all 0.6s linear;
+    -moz-transition: all 0.6s linear;
+    -ms-transition: all 0.6s linear;
+    -o-transition: all 0.6s linear;
+    transition: all 0.6s linear;
+}
+
+.item-title .item-title-text:hover {
+    color: #2cdbb5;
+}
+
+.googlemap {
+    height: 500px;
+}
+
+.googlemap #map_view {
+    height: inherit;
+}
+
+.single-package-item h3 .h3-small {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 3px 0;
+}
+
+
+/*====================================
+    Footer
+====================================*/
+
+.footer-content {
+    padding: 60px 0 40px !important;
+}
+
+.other-footer-item p a {
+    font-size: 13px !important;
+}

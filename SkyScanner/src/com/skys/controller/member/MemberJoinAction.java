@@ -1,0 +1,64 @@
+package com.skys.controller.member;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.skys.action.Action;
+import com.skys.dao.MemberDAO;
+import com.skys.dto.MemberVO;
+import com.skys.util.SHA256;
+import com.skys.util.Script;
+
+public class MemberJoinAction implements Action{
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String url = "index.jsp";
+		MemberVO member = new MemberVO();
+		MemberDAO dao = new MemberDAO();
+
+		String id = null;
+		String password = null;
+		String username = null;
+		String roadFullAddr = null;
+		String email = null;
+		String salt = SHA256.generateSalt();
+		if(request.getParameter("id") !=null) {
+			id = request.getParameter("id");
+		}
+
+		if(request.getParameter("password") !=null) {
+			password = request.getParameter("password");
+			//패스워드를 SHA256으로 해쉬하기
+			password = SHA256.getEncrypt(password, salt);
+		}
+		if(request.getParameter("username") !=null) {
+			username = request.getParameter("username");
+		}
+		if(request.getParameter("roadFullAddr") !=null) {
+			roadFullAddr = request.getParameter("roadFullAddr");
+		}
+		if(request.getParameter("email") !=null) {
+			email = request.getParameter("email");
+		}
+		member.setId(id);
+		member.setPassword(password);
+		member.setUsername(username);
+		member.setRoadFullAddr(roadFullAddr);
+		member.setEmail(email);
+		member.setSalt(salt);
+		int result = dao.insert(member);
+		if(result == 1) {
+			HttpSession session = request.getSession();
+			session.setAttribute("id", member.getId());
+			Script.moving(response, "구글 인증 페이지", url);
+		}else if(result == -1) {
+			Script.moving(response, "데이터베이스 에러");
+		}
+
+	}
+}

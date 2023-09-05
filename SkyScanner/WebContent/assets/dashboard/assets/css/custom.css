@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.table-caption {
+	margin: 0;
+}
+
+.admin-notice {
+	font-size: 13px;
+}
+
+.admin-table {
+	font-size: 14px;
+	margin-bottom: 0 !important;
+}
+
+.admin-table th {
+	border-bottom: 0 !important;
+}
+
+.admin-table th.name {
+	width: 10%;
+}
+
+.admin-table .empty-text {
+	color: #b8b8b8;
+}
+
+.admin-table .on-text {
+	color: #2ac6a9;
+}
+
+.admin-table .off-text {
+	color: #d3a603;
+}
+
+.admin-fn-btn {
+	background: #bebebe;
+	color: #fff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+.admin-fn-btn:hover {
+	color: #9b9b9b;
+}
+
+.admin-fn-btn.on {
+	background: #03a9f3;
+	color: #fff;
+}
+
+.admin-fn-btn.on:hover {
+	color: #0077ac;
+}

@@ -1,0 +1,514 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+	<!-- META DATA -->
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- font-family : kr -->
+	<link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet" />
+
+	<!-- TITLE OF SITE -->
+	<title>SkyScanner</title>
+
+	<!-- favicon img -->
+	<link rel="shortcut icon" type="image/icon" href="../assets/logo/favicon.png" />
+
+	<!--font-awesome.min.css-->
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="../assets/css/animate.css" />
+
+	<!--hover.css-->
+	<link rel="stylesheet" href="../assets/css/hover-min.css">
+
+	<!--datepicker.css-->
+	<link rel="stylesheet" href="../assets/css/datepicker.css">
+
+	<!--owl.carousel.css-->
+	<link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../assets/css/owl.theme.default.min.css" />
+
+	<!-- range css-->
+	<link rel="stylesheet" href="../assets/css/jquery-ui.min.css" />
+
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="../assets/css/bootsnav.css" />
+
+	<!--style.css-->
+	<link rel="stylesheet" href="../assets/css/custom2.css" />
+	<link rel="stylesheet" href="../assets/css/style.css" />
+
+	<!--responsive.css-->
+	<link rel="stylesheet" href="../assets/css/responsive.css" />
+
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=ko"></script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+			your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+
+	<!-- main-menu Start -->
+	<header class="top-area">
+		<div class="header-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="logo">
+							<a href="../index.html">
+									sky<span>Scanner</span>
+								</a>
+						</div>
+						<!-- /.logo-->
+					</div>
+					<!-- /.col-->
+					<div class="col-sm-10">
+						<div class="main-menu">
+
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+										<i class="fa fa-bars"></i>
+									</button>
+								<!-- / button-->
+							</div>
+							<!-- /.navbar-header-->
+							<div class="collapse navbar-collapse">
+								<ul class="nav navbar-nav navbar-right">
+									<li class="smooth-menu"><a href="#">home</a></li>
+									<li class="smooth-menu"><a href="#">항공권</a></li>
+									<li class="smooth-menu"><a href="#">호텔</a></li>
+									<li class="smooth-menu"><a href="#">렌터카</a></li>
+									<li class="smooth-menu">
+										<a href="#"><i class="fa fa-user"></i> 마이페이지</a>
+									</li>
+									<li class="smooth-menu">
+										<a href="#"><i class="fa fa-sign-out"></i> 로그아웃</a>
+									</li>
+									<!--/.project-btn-->
+								</ul>
+							</div>
+							<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.main-menu-->
+					</div>
+					<!-- /.col-->
+				</div>
+				<!-- /.row -->
+				<div class="home-border"></div>
+				<!-- /.home-border-->
+			</div>
+			<!-- /.container-->
+		</div>
+		<!-- /.header-area -->
+
+	</header>
+	<!-- /.top-area-->
+	<!-- main-menu End -->
+
+	<!--popup start -->
+	<section class="my-page">
+
+		<div class="modal fade" id="popup" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content : payment -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">×</button>
+						<h4 class="modal-title">취소/환불 안내</h4>
+					</div>
+
+					<div class="modal-body">
+						취소/환불 수수료 안내
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="" data-dismiss="modal">닫기</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<!--my page-->
+			<div class="wrapper">
+				<!-- my info -->
+				<div class="user-info mb-2r">
+					<div class="profile">
+						<img src="../assets/images/user/basic-profile.jpg" alt="">
+					</div>
+					<div class="info-box text-center">
+						<p class="info-name">이윤영</p>
+						<p class="info-email">bemyangel2@gmail.com</p>
+						<a href="#" class="info-btn"><i class="fa fa-cog"></i> 정보수정</a>
+					</div>
+					<div class="user-bg"></div>
+				</div>
+
+				<!-- reservation history -->
+				<div class="user-box mb-4r">
+					<div class="box-header mb-2r">
+						<h4 class="header-title">예약내역</h4>
+						<a href="#" data-toggle="modal" data-target="#popup" class="link float-right">취소/환불 안내</a>
+					</div>
+
+					<!-- 왕복 -->
+					<div class="resv-table">
+						<ul>
+							<li class="resv-info">
+								<p class="info-title">예약정보</p>
+								<p class="info-no">20180920172500000000</p>
+								<p class="info-date">2018/09/20 17:25</p>
+								<a href="myReserv.html" class="info-more-btn">상세내역</a>
+							</li>
+							<li>
+								<div class="ticket-info">
+									<ul>
+										<li>
+											<p>아시아나 항공</p>
+											<p>탑승인원 2명</p>
+											<p><span class="text-price">380,400원</span> <span class="text-success">예약완료</span></p>
+										</li>
+
+										<li>
+											<div class="trip-date">
+												<p class="trip-title">가는 날</p>
+												<p><span class="trip-airport">김포</span> 2018/09/26 06:05</p>
+											</div>
+											<div class="trip-date">
+												<p class="trip-title">오는 날</p>
+												<p><span class="trip-airport">제주</span> 2018/09/31 17:05</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 편도 -->
+					<div class="resv-table">
+						<ul>
+							<li class="resv-info">
+								<p class="info-title">예약정보</p>
+								<p class="info-no">20180920172500000000</p>
+								<p class="info-date">2018/09/20 17:25</p>
+								<a href="myReserv.html" class="info-more-btn">상세내역</a>
+							</li>
+							<li>
+								<div class="ticket-info">
+									<ul>
+										<li>
+											<p>아시아나 항공</p>
+											<p>탑승인원 2명</p>
+											<p><span class="text-price">380,400원</span> <span class="text-success">예약완료</span></p>
+										</li>
+
+										<li>
+											<div class="trip-date">
+												<p class="trip-title">가는 날</p>
+												<p><span class="trip-airport">김포</span> 2018/09/26 06:05</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- <table class="table table-bordered resv-table" style="display:none">
+						<thead>
+							<th>예약번호</th>
+							<th>예약일</th>
+							<th>예약정보</th>
+							<th>결제정보</th>
+							<th>상태</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>20180920172500000000</td>
+								<td>2018/09/20 17:25</td>
+								<td class="resv-info">
+									<p>김포 - 제주(왕복)</p>
+									<p>아시아나 항공</p>
+									<p>가는 날 : 2018/09/26 06:05 | 오는날 : 2018/09/31 17:05</p>
+									<p>인원 : 2명</p>
+								</td>
+								<td>380,400원</td>
+								<td>
+									<p class="text-blue">예약완료</p><a href="#" class="text-link">결제취소</a></td>
+							</tr>
+
+							<tr>
+								<td>20180920172500000000</td>
+								<td>2018/09/20 17:25</td>
+								<td class="resv-info">
+									<p>김포 - 제주(왕복)</p>
+									<p>아시아나 항공</p>
+									<p>가는 날 : 2018/09/26 06:05 | 오는날 : 2018/09/31 17:05</p>
+									<p>인원 : 2명</p>
+								</td>
+								<td>380,400원</td>
+								<td>
+									<p class="text-red">예약대기</p><a href="#" class="text-link">결제하기</a></td>
+							</tr>
+
+							<tr>
+								<td>20180920172500000000</td>
+								<td>2018/09/20 17:25</td>
+								<td class="resv-info">
+									<p>김포 - 제주(왕복)</p>
+									<p>아시아나 항공</p>
+									<p>가는 날 : 2018/09/26 06:05 | 오는날 : 2018/09/31 17:05</p>
+									<p>인원 : 2명</p>
+								</td>
+								<td>380,400원</td>
+								<td>
+									<p class="text-gray">예약취소</p><a href="#" class="text-link">삭제</a></td>
+							</tr>
+						</tbody>
+					</table> -->
+				</div>
+
+				<!-- customer history -->
+				<div class="user-box mb-4r">
+					<div class="box-header mb-2r">
+						<h4 class="header-title">문의내역</h4>
+					</div>
+
+					<table class="table table-bordered qna-table">
+						<thead>
+							<th>제목</th>
+							<th>상태</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a href="myQna.html">[회원] 회원탈퇴는 어떻게 하죠?</a>
+									<p class="qna-date">2018/09/17 10:39</p>
+								</td>
+								<td class="qna-state text-success">답변완료</td>
+							</tr>
+
+							<tr>
+								<td>
+									<a href="myQna.html">[회원] 회원탈퇴는 어떻게 하죠?</a>
+									<p class="qna-date">2018/09/17 10:39</p>
+								</td>
+								<td class="qna-state">답변대기</td>
+							</tr>
+
+							<tr>
+								<td>
+									<a href="myQna.html">[회원] 회원탈퇴는 어떻게 하죠?</a>
+									<p class="qna-date">2018/09/17 10:39</p>
+								</td>
+								<td class="qna-state text-success">답변완료</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- review history -->
+				<div class="user-box mb-4r">
+					<div class="box-header mb-2r">
+						<h4 class="header-title">리뷰관리</h4>
+					</div>
+
+					<table class="table table-bordered review-table">
+						<thead>
+							<th>1</th>
+							<th>1</th>
+							<th>1</th>
+							<th>1</th>
+							<th>1</th>
+							<th>1</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+								<td>2</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- <div class="col-md-3">
+					<div class="menu-box">
+						<div class="user-info mb-3r">
+							<div class="profile">
+								<img src="../assets/images/user/basic-profile.jpg" alt="">
+							</div>
+							<p class="text-center intro-msg">이윤영</p>
+							<p class="text-center user-email">bemyangel2@gmail.com</p>
+						</div>
+						<ul class="user-menu">
+							<li><a href="#"><i class="fa fa-user"></i> 계정관리</a></li>
+							<li><a href="#"><i class="fa fa-check-square"></i> 예약내역</a></li>
+							<li><a href="#"><i class="fa fa-list-alt"></i> 문의내역</a></li>
+							<li><a href="#"><i class="fa fa-edit"></i>리뷰관리</a></li>
+						</ul>
+					</div>
+		        </div>
+		        <div class="col-md-9">
+					<div class="menu-box">
+						<p>페이지</p>
+					</div>
+		        </div> -->
+		</div>
+		<!--/.container-->
+
+	</section>
+	<!--/.member-page-->
+	<!--member-page end -->
+
+	<!-- footer-copyright start -->
+	<footer class="footer-copyright">
+		<div class="container">
+			<div class="footer-content">
+				<div class="row">
+
+					<div class="col-sm-3">
+						<div class="single-footer-item">
+							<div class="footer-logo">
+								<a href="../index.html">
+										sky<span>Scanner</span>
+									</a>
+								<p>
+									best travel agency
+								</p>
+							</div>
+						</div>
+						<!--/.single-footer-item-->
+					</div>
+					<!--/.col-->
+
+					<div class="col-sm-3">
+						<div class="single-footer-item">
+							<h2>sitemap</h2>
+							<div class="single-footer-txt">
+								<p><a href="#">airlines</a></p>
+								<p><a href="#">hotels</a></p>
+								<p><a href="#">car sharing</a></p>
+								<hr>
+								<div class="other-footer-item">
+									<p><a href="#">회사소개</a></p>
+									<p><a href="#">뉴스</a></p>
+									<p><a href="#">도움말</a></p>
+									<p><a href="#">서비스 이용약관</a></p>
+									<p><a href="#">개인정보처리방침</a></p>
+								</div>
+							</div>
+							<!--/.single-footer-txt-->
+						</div>
+						<!--/.single-footer-item-->
+
+					</div>
+					<!--/.col-->
+
+					<div class="col-sm-3">
+						<div class="single-footer-item text-center">
+							<h2 class="text-left">contacts</h2>
+							<div class="single-footer-txt text-left">
+								<p>+82 (051) 1234 6543</p>
+								<p>bemyangel2@gmail.com</p>
+								<p>Busan, Korea</p>
+							</div>
+							<!--/.single-footer-txt-->
+						</div>
+						<!--/.single-footer-item-->
+					</div>
+					<!--/.col-->
+
+				</div>
+				<!--/.row-->
+
+			</div>
+			<!--/.footer-content-->
+			<hr>
+			<div class="foot-icons ">
+				<!-- <ul class="footer-social-links list-inline list-unstyled">
+		                <li><a href="#" target="_blank" class="foot-icon-bg-1"><i class="fa fa-facebook"></i></a></li>
+		                <li><a href="#" target="_blank" class="foot-icon-bg-2"><i class="fa fa-twitter"></i></a></li>
+		                <li><a href="#" target="_blank" class="foot-icon-bg-3"><i class="fa fa-instagram"></i></a></li>
+		        	</ul> -->
+				<p>&copy; 2018 SkyScanner. All Right Reserved</p>
+
+			</div>
+			<!--/.foot-icons-->
+			<div id="scroll-Top">
+				<i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+			</div>
+			<!--/.scroll-Top-->
+		</div>
+		<!-- /.container-->
+
+	</footer>
+	<!-- /.footer-copyright-->
+	<!-- footer-copyright end -->
+
+
+
+
+	<script src="../assets/js/jquery.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+	<!--modernizr.min.js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+	<!--bootstrap.min.js-->
+	<script src="../assets/js/bootstrap.min.js"></script>
+
+	<!-- bootsnav js -->
+	<script src="../assets/js/bootsnav.js"></script>
+
+	<!-- jquery.filterizr.min.js -->
+	<script src="../assets/js/jquery.filterizr.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+	<!--jquery-ui.min.js-->
+	<script src="../assets/js/jquery-ui.min.js"></script>
+
+	<!--owl.carousel.js-->
+	<script src="../assets/js/owl.carousel.min.js"></script>
+
+	<!-- jquery.sticky.js -->
+	<script src="../assets/js/jquery.sticky.js"></script>
+
+	<!--datepicker.js-->
+	<script src="../assets/js/datepicker.js"></script>
+
+	<!--Custom JS-->
+	<script src="../assets/js/custom.js"></script>
+
+
+</body>
+
+</html>
